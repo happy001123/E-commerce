@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    color: #333;
+  }
+
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .search-box {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .search-box input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .search-box button {
+    padding: 10px 15px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .search-box button:hover {
+    background: #45a049;
+  }
+
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .product {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .product h4 {
+    font-size: 16px;
+    height: 45px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .product p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .product button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .product button:hover {
+    background: #45a049;
+  }
+  .cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 200px;
+    z-index: 1000;
+  }
+
+  .cart h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #4CAF50;
+  }
+
+  .cart p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  @media(max-width: 600px) {
+    .cart {
+      width: 150px;
+      font-size: 14px;
+    }
+
+    .search-box input {
+      width: 180px;
+    }
+  }
